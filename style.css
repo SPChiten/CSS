@@ -1,0 +1,491 @@
+CSS (Cascading Style Sheets) is a language used for styling and formatting web documents.
+Here are some commonly used CSS commands (also known as CSS properties) along with their brief descriptions:
+
+
+color: Specifies the text color.
+
+background-color: Sets the background color of an element.
+
+font-size: Defines the size of the font.
+
+font-family: Specifies the font family to be used.
+
+font-weight: Sets the weight (boldness) of the font.
+
+text-align: Aligns the text horizontally within an element.
+
+text-decoration: Adds decorations to the text (e.g., underline, strikethrough).
+
+padding: Sets the padding space around the content inside an element.
+
+margin: Defines the margin space around an element.
+
+border: Creates a border around an element.
+
+width: Sets the width of an element.
+
+height: Sets the height of an element.
+
+display: Determines how an element is displayed (e.g., block, inline, none).
+
+position: Specifies the positioning method of an element (e.g., static, relative, absolute).
+
+float: Aligns an element to the left or right and allows text to wrap around it.
+
+clear: Clears the floating elements next to the specified element.
+
+opacity: Sets the opacity level of an element.
+
+transition: Defines transition effects for an element (e.g., smooth fading, sliding).
+
+box-shadow: Adds a shadow effect to an element.
+
+text-shadow: Applies a shadow to the text.
+
+border-radius: Rounds the corners of an element's border.
+
+box-sizing: Specifies how the total width and height of an element are calculated.
+
+z-index: Sets the stacking order of positioned elements.
+
+overflow: Determines how content that overflows an element is handled.
+
+cursor: Specifies the mouse cursor appearance when hovering over an element.
+
+*******************************************************************************
+
+CSS commands with example
+-------------------------
+
+Selector: Selects HTML elements to apply styles to.
+
+Example: Select all paragraphs and set the font color to red.
+p {
+  color: red;
+}
+-----------------------------------------------------------------
+Class Selector: Selects elements with a specific class.
+
+Example: Select all elements with the class "highlight" and set the background color to yellow.
+.highlight {
+  background-color: yellow;
+}
+-----------------------------------------------------------------
+ID Selector: Selects a single element with a specific ID.
+
+Example: Select the element with the ID "logo" and set the font size to 24 pixels.
+#logo {
+  font-size: 24px;
+}
+-----------------------------------------------------------------
+Multiple Selectors: Apply styles to multiple selectors at once.
+
+Example: Select all h1, h2, and h3 headings and set the text color to blue.
+h1, h2, h3 {
+  color: blue;
+}
+-----------------------------------------------------------------
+Property: Defines a specific style property for an element.
+
+Example: Set the background color of all paragraphs to light gray.
+p {
+  background-color: lightgray;
+}
+-----------------------------------------------------------------
+Value: Specifies the value of a style property.
+
+Example: Set the font family of all paragraphs to Arial.
+p {
+  font-family: Arial, sans-serif;
+}
+-----------------------------------------------------------------
+Background: Defines the background properties of an element.
+
+Example: Set a background image for the body element.
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+-----------------------------------------------------------------
+Margin: Sets the margin space around an element.
+
+Example: Set a 20-pixel margin for all sides of a div element.
+div {
+  margin: 20px;
+}
+-----------------------------------------------------------------
+Padding: Sets the padding space inside an element.
+
+Example: Set a 10-pixel padding for all sides of a div element.
+div {
+  padding: 10px;
+}
+-----------------------------------------------------------------
+Display: Specifies how an element is displayed.
+
+Example: Hide an element by setting its display property to none.
+.hidden {
+  display: none;
+}
+-----------------------------------------------------------------
+Font: Sets the font properties for text.
+
+Example: Set the font size, family, and weight for a paragraph.
+p {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+-----------------------------------------------------------------
+Border: Sets the border properties for an element.
+
+Example: Set a red border with a thickness of 2 pixels for a div element.
+div {
+  border: 2px solid red;
+}
+-----------------------------------------------------------------
+Position: Specifies the positioning method for an element.
+
+Example: Position an image 50 pixels from the top and 20 pixels from the left.
+img {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+-----------------------------------------------------------------
+Float: Specifies whether an element should float to the left or right of its container.
+
+Example: Float an image to the right of the text.
+img {
+  float: right;
+}
+-----------------------------------------------------------------
+Opacity: Sets the opacity level of an element.
+
+Example: Set the opacity of a div to 0.5 (50% transparency).
+div {
+  opacity: 0.5;
+}
+-----------------------------------------------------------------
+Box Shadow: Adds a shadow effect to an element.
+
+Example: Add a box shadow to a button element.
+button {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+-----------------------------------------------------------------
+Media Queries: Apply styles based on different screen sizes or devices.
+
+Example: Change the font color of a heading to white on screens smaller than 600 pixels wide.
+@media screen and (max-width: 600px) {
+  h1 {
+    color: white;
+  }
+}
+-----------------------------------------------------------------
+Keyframes: Create animations by defining a sequence of keyframes.
+
+Example: Animate a div element by changing its background color from red to blue.
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+div {
+  animation: colorChange 2s infinite;
+}
+-----------------------------------------------------------------
+Transform: Applies 2D or 3D transformations to an element.
+
+Example: Rotate an image by 45 degrees.
+img {
+  transform: rotate(45deg);
+}
+-----------------------------------------------------------------
+Flexbox: Provides a flexible way to lay out and align elements.
+
+Example: Create a flex container with three child elements evenly spaced horizontally.
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+-----------------------------------------------------------------
+Grid Layout: Creates a grid-based layout system for arranging elements.
+
+Example: Create a grid layout with three columns and two rows.
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+-----------------------------------------------------------------
+Text Alignment: Sets the horizontal alignment of text within an element.
+
+Example: Align the text within a paragraph to the center.
+p {
+  text-align: center;
+}
+-----------------------------------------------------------------
+Text Decoration: Adds visual effects to text, such as underline or strikethrough.
+
+Example: Add an underline to a link.
+a {
+  text-decoration: underline;
+}
+-----------------------------------------------------------------
+Overflow: Specifies what happens when the content of an element exceeds its size.
+
+Example: Add a scrollbar to a div element when its content overflows.
+div {
+  overflow: auto;
+}
+-----------------------------------------------------------------
+Transition: Specifies the transition effect for a CSS property change.
+
+Example: Apply a smooth transition to the background color of a button on hover.
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: blue;
+}
+-----------------------------------------------------------------
+Pseudo-classes: Selects elements based on their state or position.
+
+Example: Change the color of a button when it is being clicked.
+button:active {
+  color: red;
+}
+-----------------------------------------------------------------
+Pseudo-elements: Adds special effects to specific parts of an element.
+
+Example: Add a before pseudo-element to insert content before an element.
+p::before {
+  content: ">> ";
+}
+-----------------------------------------------------------------
+Box Sizing: Specifies how the total width and height of an element are calculated.
+
+Example: Include padding and border in the total width and height of a box.
+div {
+  box-sizing: border-box;
+}
+-----------------------------------------------------------------
+Z-index: Specifies the stack order of positioned elements.
+
+Example: Set a higher z-index for an element to bring it forward in the stacking order.
+div {
+  z-index: 10;
+}
+-----------------------------------------------------------------
+Variables: Define and use custom variables for reusability and ease of styling.
+
+Example: Define a variable for a primary color and use it in various styles.
+:root {
+  --primary-color: #007bff;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+-----------------------------------------------------------------
+Filters: Applies visual effects to an element, such as adjusting brightness or blurring.
+
+Example: Apply a grayscale filter to an image.
+img {
+  filter: grayscale(100%);
+}
+-----------------------------------------------------------------
+Flexbox Alignment: Controls the alignment and positioning of flex items.
+
+Example: Center align flex items both horizontally and vertically.
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+-----------------------------------------------------------------
+Responsive Images: Adjusts the size and behavior of images based on different screen sizes.
+
+Example: Set a maximum width of 100% for images to ensure they scale appropriately on small screens.
+img {
+  max-width: 100%;
+  height: auto;
+}
+-----------------------------------------------------------------
+Animations: Creates complex animations using keyframes and animation properties.
+
+Example: Create a pulsating animation for a button.
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button {
+  animation: pulse 2s infinite;
+}
+-----------------------------------------------------------------
+CSS Grid Alignment: Controls the alignment and positioning of grid items.
+
+Example: Center align grid items both horizontally and vertically.
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+-----------------------------------------------------------------
+Transitions: Creates smooth transitions between different states of an element.
+
+Example: Apply a transition effect to smoothly change the color of a button on hover.
+button {
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: red;
+}
+-----------------------------------------------------------------
+Sticky Positioning: Fixes an element's position relative to the viewport when scrolling.
+
+Example: Create a sticky navigation bar that remains at the top of the page.
+.navbar {
+  position: sticky;
+  top: 0;
+}
+-----------------------------------------------------------------
+Transformations: Applies 2D or 3D transformations to an element, such as rotation or scaling.
+
+Example: Rotate an image by 45 degrees and scale it to 1.2 times its original size.
+img {
+  transform: rotate(45deg) scale(1.2);
+}
+-----------------------------------------------------------------
+Text Effects: Adds decorative effects to text, such as shadows or gradients.
+
+Example: Add a text shadow to a heading.
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+-----------------------------------------------------------------
+Overflow: Specifies how overflowing content is handled within an element.
+
+Example: Create a scrolling container for content that exceeds its height.
+.container {
+  overflow: auto;
+}
+-----------------------------------------------------------------
+Positioning: Controls the positioning of an element within its container.
+
+Example: Position an element 20 pixels from the top and 10 pixels from the left.
+.element {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+-----------------------------------------------------------------
+Selectors Level 4: Introduces new selectors to target specific elements.
+
+Example: Select all paragraph elements that are the first child of their parent.
+p:first-child {
+  color: red;
+}
+-----------------------------------------------------------------
+Gradients: Creates gradient backgrounds or borders.
+
+Example: Apply a linear gradient background to a div element.
+.element {
+  background: linear-gradient(to right, #ff0000, #0000ff);
+}
+-----------------------------------------------------------------
+Text Overflow: Specifies how to handle text that overflows its container.
+
+Example: Show an ellipsis (...) when text exceeds the width of its container.
+.element {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+-----------------------------------------------------------------
+Shape Outside: Shapes the content flow around an element.
+
+Example: Wrap text around a circular image.
+img {
+  shape-outside: circle();
+  float: left;
+}
+-----------------------------------------------------------------
+User Interface (UI) Styles: Styles form elements and interactive components.
+
+Example: Customize the appearance of a checkbox.
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 3px;
+}
+-----------------------------------------------------------------
+Backdrop Filter: Applies a visual effect to the area behind an element.
+
+Example: Blur the background behind a modal dialog.
+.modal {
+  backdrop-filter: blur(8px);
+}
+-----------------------------------------------------------------
+Counter Styles: Defines custom styles for CSS counters.
+
+Example: Create a custom counter style for roman numerals.
+@counter-style roman {
+  system: fixed;
+  symbols: I V X L C D M;
+  suffix: "";
+}
+
+ol {
+  counter-reset: my-counter;
+  list-style: roman;
+}
+-----------------------------------------------------------------
+Column Layout: Divides content into columns.
+
+Example: Create a multi-column layout for a text block.
+.text-block {
+  columns: 2;
+}
+-----------------------------------------------------------------
+Custom Animations: Create custom animations using @keyframes.
+
+Example: Animate an element by rotating it and changing its color.
+@keyframes rotate-and-color {
+  0% {
+    transform: rotate(0deg);
+    background-color: red;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: blue;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: green;
+  }
+}
+
+.element {
+  animation: rotate-and-color 4s infinite;
+}
